@@ -1,38 +1,75 @@
-# Project Report: Road Lane Detection and Departure Warning
 
-## Abstract
-This project will address the task described below using computer vision.
+# Project Report
+
+## Title
+
+Road Lane Detection and Departure Warning Using Computer Vision
 
 ## 1. Introduction
-Explain the application and why the problem matters.
 
-## 2. Problem statement
-Develop a computer-vision solution for road lane detection and departure warning.
+Lane detection is an important computer vision application for
+advanced driver assistance systems and autonomous vehicles.
 
-## 3. Objectives
-- Implement the pipeline.
-- Inspect and preprocess data.
-- Generate visualizations.
-- Evaluate against ground truth.
-- Record limitations and future work.
+The purpose of this project is to identify lane boundaries from road
+images and determine whether the vehicle is deviating from the lane.
 
-## 4. Dataset
-KITTI Road/Lane Detection Dataset 224 × 224
-Source: https://www.kaggle.com/datasets/kpgeek/kitti-roadlane-detection-dataset-224-x-224
+## 2. Problem Statement
 
-Record dataset version, license, sample count, annotations, and split after inspection.
+A vehicle moving away from its lane center may cause a collision.
+Therefore, an automated system that detects lane boundaries and warns
+the driver about lane departure can improve road safety.
 
-## 5. Methodology
-Describe the actual pipeline used and why it was selected.
+## 3. Objective
 
-## 6. Tools and implementation
-Document the Python version, libraries, scripts, and run instructions.
+The objectives are:
 
-## 7. Results and performance evaluation
-Insert measured results only. State test-set size and metric definitions. If ground truth is unavailable, explicitly state that quantitative evaluation was not performed.
+1. Detect lane boundaries.
+2. Estimate the lane center.
+3. Calculate lateral deviation.
+4. Generate a lane departure warning.
+5. Evaluate the detection performance.
 
-## 8. Limitations
-Describe observed failure cases and data limitations.
+## 4. Methodology
 
-## 9. Conclusion and future work
-Complete after running the project and reviewing actual results.
+The following classical computer vision pipeline is used:
+
+Input Image
+→ Grayscale
+→ Gaussian Blur
+→ Canny Edge Detection
+→ Region of Interest
+→ Hough Transform
+→ Lane Boundary Detection
+→ Lane Center
+→ Lateral Deviation
+→ Departure Warning
+
+## 5. Results
+
+Sample results are stored in the results and screenshots folders.
+
+Quantitative performance metrics should be calculated using the
+dataset ground-truth annotations.
+
+## 6. Limitations
+
+The method may be affected by shadows, poor illumination, occlusion,
+worn lane markings and highly curved roads.
+
+## 7. Future Improvements
+
+Future versions can use:
+
+- Perspective transformation
+- Polynomial lane fitting
+- Camera calibration
+- Deep learning based lane segmentation
+- Real-time video processing
+- Vehicle speed estimation
+- Steering correction
+
+## 8. Conclusion
+
+The project demonstrates how classical computer vision techniques
+can be combined to detect road lanes and generate lane departure
+warnings.
