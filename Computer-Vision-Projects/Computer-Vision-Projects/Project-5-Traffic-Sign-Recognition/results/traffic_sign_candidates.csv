@@ -1,0 +1,15 @@
+Candidate_ID,x1,y1,x2,y2,Predicted_Category,Detection_Method
+1,439,606,457,625,Unclassified,HSV color segmentation
+2,513,587,531,600,Unclassified,HSV color segmentation
+3,149,580,271,663,Unclassified,HSV color segmentation
+4,281,573,308,594,Unclassified,HSV color segmentation
+5,584,571,600,587,Unclassified,HSV color segmentation
+6,341,334,356,355,Unclassified,HSV color segmentation
+7,265,304,281,319,Unclassified,HSV color segmentation
+8,266,266,298,299,Unclassified,HSV color segmentation
+9,0,195,17,221,Unclassified,HSV color segmentation
+10,297,189,391,277,Unclassified,HSV color segmentation
+11,719,184,1087,755,Unclassified,HSV color segmentation
+12,244,176,279,198,Unclassified,HSV color segmentation
+13,42,167,146,276,Unclassified,HSV color segmentation
+14,11,155,34,176,Unclassified,HSV color segmentation

@@ -1,0 +1,8 @@
+Metric,Value
+True Positives,0.0
+False Positives,14.0
+False Negatives,0.0
+Precision,0.0
+Recall,0.0
+F1-score,0.0
+IoU Threshold,0.5
